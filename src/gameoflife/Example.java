@@ -120,6 +120,19 @@ class Example {
                 System.out.println("");
             }
             System.out.println("");
-    }
-    
+        
+        //forward to next generation step 2
+        System.out.println("If an empty cell has more than 2 neighbours, 1 alive person will be born");
+            for(int i=0;i<10;i++){
+                for(int j=0;j<10;j++){
+                    if(Grid[6][4] == 1){
+                        Grid[6][3] = 1;
+                        Grid[6][5] = 1;
+                    }
+                    System.out.print(Grid[i][j] + " ");
+                }
+                System.out.println("");
+            }
+            System.out.println("");   
+    }   
 }
