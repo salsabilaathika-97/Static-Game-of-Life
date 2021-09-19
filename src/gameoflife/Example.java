@@ -163,7 +163,7 @@ class Example {
             }
             System.out.println("");
         
-        //forward to next generation step 1
+        //forward to first generation step 1
         System.out.println("Forward to first generation step 1");
             for(int i=0;i<10;i++){
                 for(int j=0;j<10;j++){
@@ -172,6 +172,22 @@ class Example {
                         Grid[6][5] = 1;
                         Grid[5][3] = 1;
                         Grid[7][3] = 1;
+                    } 
+                    System.out.print(Grid[i][j] + " ");
+                }
+                System.out.println("");
+            }
+            System.out.println("");
+        
+        //forward to first generation step 2
+        System.out.println("Forward to first generation step 2");
+            for(int i=0;i<10;i++){
+                for(int j=0;j<10;j++){
+                    if(Grid[6][3] == 1 && Grid[6][5] == 1){
+                        Grid[6][2] = 0;
+                        Grid[6][5] = 0;
+                        Grid[5][4] = 1;
+                        Grid[7][4] = 1;
                     } 
                     System.out.print(Grid[i][j] + " ");
                 }
