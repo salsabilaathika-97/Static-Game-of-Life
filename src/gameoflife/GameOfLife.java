@@ -11,12 +11,18 @@ public class GameOfLife extends Example {
         System.out.println("3. Beehive");
         System.out.print("Your answer: ");
         int answer = scan.nextInt();
-        if (answer == 1) {
-           ex.Oscillator();
-        } else if (answer == 2) {
-           ex.ReverseOscillator();
-        } else if (answer == 3) {
-            ex.Beehive();
+        switch (answer) {
+            case 1:
+                ex.Oscillator();
+                break;
+            case 2:
+                ex.ReverseOscillator();
+                break;
+            case 3:
+                ex.Beehive();
+                break;
+            default:
+                break;
         }
         
     }   
