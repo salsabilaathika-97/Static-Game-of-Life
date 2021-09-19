@@ -80,6 +80,32 @@ class Example {
                 System.out.println("");
             }
             System.out.println("");
+            
+        //add 1 person alive
+        System.out.println("Add 1 person alive");
+            for (int i=0;i<10;i++){
+                for(int j=0;j<10;j++){
+                    Grid[i][j] = 0;
+                    Grid[6][4] = 1;
+                    System.out.print(Grid[i][j]+" ");
+                }
+                System.out.println("");
+            }
+            System.out.println("");
+        
+        //add 2 neighbors between 1 person alive
+        System.out.println("Add 2 neighbours between 1 person alive");
+            for (int i=0;i<10;i++){
+                for(int j=0;j<10;j++){
+                    Grid[i][j] = 0;
+                    Grid[6][4] = 1;
+                    Grid[5][4] = 1;
+                    Grid[7][4] = 1;
+                    System.out.print(Grid[i][j]+" ");
+                }
+                System.out.println("");
+            }
+            System.out.println("");
         
     }
     
