@@ -107,6 +107,19 @@ class Example {
             }
             System.out.println("");
         
+        //forward to next generation step 1
+        System.out.println("If 1 alive person has less than 2 neighbours, they died");
+            for(int i=0;i<10;i++){
+                for(int j=0;j<10;j++){
+                    if(Grid[5][4] == 1 && Grid[7][4] == 1){
+                        Grid[5][4] = 0;
+                        Grid[7][4] = 0;
+                    } 
+                    System.out.print(Grid[i][j] + " ");
+                }
+                System.out.println("");
+            }
+            System.out.println("");
     }
     
 }
