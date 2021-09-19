@@ -6,6 +6,7 @@ public class GameOfLife extends Example {
         Scanner scan = new Scanner(System.in);
         System.out.println("Pick example");
         System.out.println("1. Oscillator");
+        System.out.print("Your answer: ");
         int answer = scan.nextInt();
         if (answer == 1) {
            Example e1 = new Example();
