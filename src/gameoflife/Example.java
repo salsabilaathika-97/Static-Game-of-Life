@@ -209,5 +209,19 @@ class Example {
             }
             System.out.println("");
         
+        //forward to second generation step 2
+        System.out.println("Forward to second generation step 2");
+        for(int i=0;i<10;i++){
+            for(int j=0;j<10;j++){
+                if(Grid[5][4] == 1 && Grid[7][4] == 1){
+                      Grid[6][4] = 0;
+                      Grid[6][5] = 1;
+                    }
+                    System.out.print(Grid[i][j] + " ");
+                }
+                System.out.println("");
+            }
+            System.out.println("");
+        
     }
 }
