@@ -12,6 +12,5 @@ public class GameOfLife extends Example {
            Example e1 = new Example();
            e1.Oscillator();
         }
-       
     }   
 }

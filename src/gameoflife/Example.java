@@ -68,4 +68,19 @@ class Example {
             System.out.println("");
     }
     
+    public void ReverseOscillator(){
+        int [][] Grid = new int [10][10];
+        System.out.println("Second Example: Reverse Oscillator");
+        //initial cell
+            for (int i=0;i<10;i++){
+                for(int j=0;j<10;j++){
+                    Grid[i][j] = 0;
+                    System.out.print(Grid[i][j]+" ");
+                }
+                System.out.println("");
+            }
+            System.out.println("");
+        
+    }
+    
 }
