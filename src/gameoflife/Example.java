@@ -148,7 +148,7 @@ class Example {
             }
             System.out.println("");
         
-        //add 4 person alive
+        //add 4 persons alive
         System.out.println("Add 4 person alive");
             for (int i=0;i<10;i++){
                 for(int j=0;j<10;j++){
@@ -158,6 +158,22 @@ class Example {
                     Grid[6][4] = 1;
                     Grid[6][5] = 1;
                     System.out.print(Grid[i][j]+" ");
+                }
+                System.out.println("");
+            }
+            System.out.println("");
+        
+        //forward to next generation step 1
+        System.out.println("Forward to first generation step 1");
+            for(int i=0;i<10;i++){
+                for(int j=0;j<10;j++){
+                    if(Grid[6][2] == 1 && Grid[6][5] == 1){
+                        Grid[6][2] = 0;
+                        Grid[6][5] = 1;
+                        Grid[5][3] = 1;
+                        Grid[7][3] = 1;
+                    } 
+                    System.out.print(Grid[i][j] + " ");
                 }
                 System.out.println("");
             }
